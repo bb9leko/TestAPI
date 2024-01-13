@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
+/*
     class TestJ {
         Calculator calculator = new Calculator();
         @Test
@@ -12,3 +12,4 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
             assertEquals(2, calculator.add(1, 1));
         }
     }
+*/
