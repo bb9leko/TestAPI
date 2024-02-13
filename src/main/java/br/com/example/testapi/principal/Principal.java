@@ -29,17 +29,17 @@ public class Principal {
         DadosTemporada dadosTemporada = convert.obterDados(json, DadosTemporada.class);
         System.out.println(dadosTemporada);
 
+
         List<DadosTemporada> temporadas = new ArrayList<>();
 
-        for (int i = 1 ; i <= dadosSerie.totalTemporadas(); i++) {
+        for (int i = 1; i <= dadosSerie.totalTemporadas(); i++) {
             json = consumer.obterDados(ENDERECO + nomeSerie.replace(" ", "+") +
                     "&season=" + i + APIKEY);
-            DadosTemporada dados = convert.obterDados(json, DadosTemporada.class);
-            temporadas.add(dados);
-        }
+                DadosTemporada dados = convert.obterDados(json, DadosTemporada.class);
+                temporadas.add(dados);
+            }
         temporadas.forEach(System.out::println);
-
-    }
+     }
 
 
 

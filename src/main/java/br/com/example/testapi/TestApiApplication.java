@@ -3,6 +3,7 @@ package br.com.example.testapi;
 import br.com.example.testapi.model.DadosEpisodio;
 import br.com.example.testapi.model.DadosSerie;
 import br.com.example.testapi.model.DadosTemporada;
+import br.com.example.testapi.principal.IntegracaoFipe;
 import br.com.example.testapi.principal.Principal;
 import br.com.example.testapi.service.ApiConsumer;
 import br.com.example.testapi.service.DataConvert;
@@ -24,8 +25,11 @@ public class TestApiApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Principal principal = new Principal();
-        principal.exibeMenu();
+        //Principal principal = new Principal();
+        //principal.exibeMenu();
+
+        IntegracaoFipe integracaoFipe = new IntegracaoFipe();
+        integracaoFipe.exibeMenu();
 
         /*
         ApiConsumer consumer = new ApiConsumer();
